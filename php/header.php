@@ -6,7 +6,7 @@
 <head>
   <meta charset="UTF-8">
   <title>OURS, annonces en ligne</title>
-  <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.css">
+  <link rel="stylesheet" href="/Cours/TechnoWeb/PROJET/pawcs/assets/bootstrap/css/bootstrap.css">
 </head>
 <body>
   <div class="container">
@@ -19,16 +19,16 @@
           </button>
           <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
             <a class="navbar-brand" rel="home" href="#" title="Buy Sell Rent Everything">
-              <img style="max-width:100px; margin-top:-7px;" src="assets/fig/main_logo.png">
+              <img style="max-width:100px; margin-top:-7px;" src="/Cours/TechnoWeb/PROJET/pawcs/assets/fig/main_logo.png">
             </a>
             <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
               <li class="nav-item active">
-                <a class="nav-link" href="#"> Accueil 
+                <a class="nav-link" href="/Cours/TechnoWeb/PROJET/pawcs/index.php"> Accueil 
                   <span class="sr-only">(current)</span>
                 </a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#"> Toutes nos annonces </a>
+                <a class="nav-link" href="/Cours/TechnoWeb/PROJET/pawcs/php/all_annonces.php"> Toutes nos annonces </a>
               </li>
               <li class="nav-item">
                 <a class="nav-link disabled" href="#"> Gestion des annonces</a>
