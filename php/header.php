@@ -7,6 +7,7 @@
   <meta charset="UTF-8">
   <title>OURS, annonces en ligne</title>
   <link rel="stylesheet" href="/Cours/TechnoWeb/PROJET/pawcs/assets/bootstrap/css/bootstrap.css">
+  <link rel="stylesheet" href="/Cours/TechnoWeb/PROJET/pawcs/assets/customCSS/custom.css">
 </head>
 <body>
   <div class="container">
