@@ -1,13 +1,13 @@
 <?php
 
 ?>
-
 <html lang="fr">
 <head>
   <meta charset="UTF-8">
   <title>OURS, annonces en ligne</title>
   <link rel="stylesheet" href="/Cours/TechnoWeb/PROJET/pawcs/assets/bootstrap/css/bootstrap.css">
   <link rel="stylesheet" href="/Cours/TechnoWeb/PROJET/pawcs/assets/customCSS/custom.css">
+  <script type="text/javascript" src="/Cours/TechnoWeb/PROJET/pawcs/js/dynannonces.js"></script>
 </head>
 <body>
   <div class="container">
@@ -30,6 +30,9 @@
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="/Cours/TechnoWeb/PROJET/pawcs/php/all_annonces.php"> Toutes nos annonces </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/Cours/TechnoWeb/PROJET/pawcs/php/dynannonces.php"> Annonces & Recherche </a>
               </li>
               <li class="nav-item">
                 <a class="nav-link disabled" href="#"> Gestion des annonces</a>
