@@ -11,6 +11,14 @@ include "php/header.php"
     </p>
   </div>
 </div>
+<div class="row text-center">
+  <div class="col">
+    <h1> Dernière annonce en ligne : </h1>
+  </div>
+</div>
+<div class="row border border-dark rounded m-2 text-center" id="last-annonce">
+<script>lastAnnonce();</script>
+</div>
 
 <?php
 include "php/footer.php"
