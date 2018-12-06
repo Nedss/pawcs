@@ -17,7 +17,6 @@ include "php/header.php"
   </div>
 </div>
 <div class="row border border-dark rounded m-2 text-center" id="last-annonce">
-<script>lastAnnonce();</script>
 </div>
 
 <?php
