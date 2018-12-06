@@ -7,6 +7,7 @@
   <title>OURS, annonces en ligne</title>
   <link rel="stylesheet" href="/Cours/TechnoWeb/PROJET/pawcs/assets/bootstrap/css/bootstrap.css">
   <link rel="stylesheet" href="/Cours/TechnoWeb/PROJET/pawcs/assets/customCSS/custom.css">
+  <script type="text/javascript" src="/Cours/TechnoWeb/PROJET/pawcs/js/recherche.js"></script>
   <script type="text/javascript" src="/Cours/TechnoWeb/PROJET/pawcs/js/dynannonces.js"></script>
 </head>
 <body>
