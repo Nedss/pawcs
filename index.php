@@ -2,6 +2,7 @@
 include "php/header.php"
 ?>
 
+<script type="text/javascript" src="/Cours/TechnoWeb/PROJET/pawcs/js/dynannonces.js"></script>
 <div class="row">
   <div class="col text-center">
     <p> 

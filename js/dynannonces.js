@@ -28,6 +28,7 @@ document.addEventListener("DOMContentLoaded", function() {
     //console.log("Last OK");
   }
   setInterval(lastAnnonce, 60000);
+  console.log("A jour");
   lastAnnonce();
 
 });
