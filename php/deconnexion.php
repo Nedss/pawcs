@@ -11,7 +11,7 @@ echo"
     <div class='col text-center'>
       <h1> Merci de votre visite !</h1>
       </br></br></br>
-      <h6> A bientôt j'espère, ".$PSEUDO_TEMP." !</h6>
+      <h6> A bient&ocirct j'esp&egravere, ".$PSEUDO_TEMP." !</h6>
     </div>
   </div>"; 
 header("refresh:1; url=/Cours/TechnoWeb/PROJET/pawcs/index.php");

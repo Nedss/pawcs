@@ -15,7 +15,7 @@ if(isset($_SESSION["pseudo"]) && isset($_SESSION["mdp"])) {
   echo "
     <div class='row'>
       <div class='col text-center'>
-        <h1> Vous êtes déjà connecté(e) en tant que " . $_SESSION["pseudo"]. ".</h1>
+        <h1> Vous &ecirctes d&eacutej&agrave connect&eacute(e) en tant que " . $_SESSION["pseudo"]. ".</h1>
           <p class='h6'><small> <a href='/Cours/TechnoWeb/PROJET/pawcs/index.php'>Retour</a></small></p>
       </div>
     </div>";
@@ -33,7 +33,7 @@ if(isset($_SESSION["pseudo"]) && isset($_SESSION["mdp"])) {
         echo "
           <div class='row'>
             <div class='col text-center'>
-              <h1> Vous connecté(e) en tant que " . $_SESSION["pseudo"]. ".</h1>
+              <h1> Vous connect&eacute(e) en tant que " . $_SESSION["pseudo"]. ".</h1>
               <p class='h6'><small> <a href='/Cours/TechnoWeb/PROJET/pawcs/index.php'>Retour</a></small></p>
             </div>
           </div>"; 

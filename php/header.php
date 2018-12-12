@@ -42,7 +42,7 @@ session_start();
               if(isset($_SESSION["pseudo"])) {
                 echo "
                   
-                  <a href='/Cours/TechnoWeb/PROJET/pawcs/php/deconnexion.php' type='button' class='btn btn-lg btn-secondary'> Se déconnecter (".$_SESSION["pseudo"].") </a>";
+                  <a href='/Cours/TechnoWeb/PROJET/pawcs/php/deconnexion.php' type='button' class='btn btn-lg btn-secondary'> Se d&eacuteconnecter (".$_SESSION["pseudo"].") </a>";
               } else {
                 echo "
                   <a href='/Cours/TechnoWeb/PROJET/pawcs/php/connexion.php' type='button' class='btn btn-lg btn-secondary'> Se connecter </a>";

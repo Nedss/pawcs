@@ -47,7 +47,7 @@ if(isset($_SESSION["pseudo"])){
       </div>
       <div class="form-group">
         <label for="inputDescription">Description</label>
-        <textarea name="description" class="form-control" id="inputDescription" placeholder="Jeu sloobi presque neuf. Contient 50 bouts de bois de 2 pouces, 50 bouts de bois de 3 pouces, 50 bouts de bois de 4 pouces et ainsi de suite. Les 50 poutres de la longueur de la pièce dans laquelle vous jouez ne sont pas fournies" required></textarea>
+        <textarea name="description" class="form-control" id="inputDescription" placeholder="Jeu sloobi presque neuf. Contient 50 bouts de bois de 2 pouces, 50 bouts de bois de 3 pouces, 50 bouts de bois de 4 pouces et ainsi de suite. Les 50 poutres de la longueur de la pi&#232ce dans laquelle vous jouez ne sont pas fournies" required></textarea>
       </div>
       <div class="form-group">
         <label for="inputImage">Image</label>

@@ -18,7 +18,7 @@ include "header.php";
         <label for="InputRecherche"> Recherche d'annonces</label>
 
         <input name="recherche" class="form-control" type="text" placeholder="Recherche">
-        <small id="rechercheHelp" class="form-text text-muted"> Pas de mots-clés = toutes les annonces. </small>
+        <small id="rechercheHelp" class="form-text text-muted"> Pas de mots-cl&eacutes = toutes les annonces. </small>
       </div>
       <button class="btn btn-dark">Recherche</button>
     </form>
