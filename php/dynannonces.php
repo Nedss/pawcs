@@ -3,7 +3,9 @@ include "header.php";
 ?>
 
 <script type="text/javascript" src="/Cours/TechnoWeb/PROJET/pawcs/js/recherche.js"></script>
+<!--
 <script type="text/javascript" src="/Cours/TechnoWeb/PROJET/pawcs/js/suppression.js"></script>
+-->
 <div class="row">
   <div class="col text-center">
     <h1> Annonces & Recherches </h1>
@@ -20,6 +22,7 @@ include "header.php";
       </div>
       <button class="btn btn-dark">Recherche</button>
     </form>
+
     <?php
       if(isset($_SESSION["pseudo"])){
         echo '<div id="annonces-login"></div>';
@@ -28,14 +31,6 @@ include "header.php";
       }
     ?>
 
-
-    <!--<button class="btn btn-primary" onclick="lireAnnonces()">Afficher toutes les annonces !</button> -->
-  </div>
-</div>
-
-<div class="row mt-3">
-  <div class="col">
-    <input type="button" value="Supprimer les annonces sélectionnées" class="btn btn-danger btn-lg btn-block" onclick="suppression()" />
   </div>
 </div>
 <div class="row">
