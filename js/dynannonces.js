@@ -15,10 +15,11 @@ document.addEventListener("DOMContentLoaded", function() {
         "</div>" + 
         "<div class='col-8 cell-align'>" +
         "<div>" +
-        "<p>" + annonce[0].titre + "</p>" +
+        "<p class='font-weight-bold'>" + annonce[0].titre + "</p>" +
         "<p>" + annonce[0].categorie + "</p>" +
-        "<p>" + annonce[0].prix + " euros </p>" +
-        "<p>" + annonce[0].date_ajout + "</p>" +
+        "<p class='text-justify'>" + annonce[0].description + "</p>" +
+        "<p class='text-secondary font-weight-bold'>" + annonce[0].prix + " euros </p>" +
+        "<p class='text-right'> <small>" + annonce[0].date_ajout + "</small></p>" +
         "</div>" +
         "</div>";
       divAnnonce.innerHTML = annonceStructure;

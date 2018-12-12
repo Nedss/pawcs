@@ -55,6 +55,9 @@ if(isset($_SESSION["pseudo"])){
       </div>
       <button type="submit" class="btn btn-secondary">Valider votre annonce</button>
     </form>';
+
+} else {
+  echo "<h5> Vous devez être <a class='text-secondary' href='/Cours/TechnoWeb/PROJET/pawcs/php/connexion.php'>connecté(e)</a> pour envoyer une annonce !</h5>"; 
 }
 
 ?>

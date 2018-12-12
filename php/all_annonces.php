@@ -4,7 +4,7 @@ include "header.php";
 
 <div class="row">
   <div class="col text-center">
-    <h1> Consultez toutes nos annonces ! </h1>
+    <h1>Consultez toutes nos annonces !</h1>
   </div>
 </div>
 
@@ -15,7 +15,7 @@ $maRequete = "SELECT * FROM nedss.annonces;";
 $resRequete = requete($maBd, $maRequete);
 
 foreach ($resRequete as $value => $line) {
-  echo "<div class='row border border-dark rounded m-2 text-center'>";
+  echo "<div class='row border border-dark rounded m-2'>";
   echo "<div class='col-4'>";
   #echo  "<p> Ligne n°" . $value . ':' . $line . "</p>";
   echo "<a href='" . $line['photo'] . "' >"; 
@@ -24,16 +24,18 @@ foreach ($resRequete as $value => $line) {
   echo "</div>";
   echo "<div class='col-8 cell-align'>";
   echo "<div>";
-  echo "<p>" . $line['titre'] . "</p>";
+  echo "<p class='font-weight-bold'>" . $line['titre'] . "</p>";
   echo "<p>" . $line['categorie'] . "</p>";
-  echo "<p>" . $line['prix'] . " euros </p>";
-  echo "<p>" . $line['date_ajout'] . "</p>";
+  echo "<p class='text-justify'>" . $line['description'] . "</p>";
+  echo "<p class='text-secondary font-weight-bold'>" . $line['prix'] . " euros </p>";
+  echo "<p class='text-right'> <small>" . $line['date_ajout'] . "</small></p>";
   echo "</div>";
   echo "</div>";
   echo "</div>";
 }
 
 ?>
+
 
 <?php
 include "footer.php";

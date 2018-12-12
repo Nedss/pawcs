@@ -18,20 +18,21 @@ document.addEventListener('DOMContentLoaded', function() {
           var myID = annonces[i].id;
           console.log(myID);
           annoncesStructurees += "<div class='row border border-dark rounded m-2 text-center'>" +
-            "<div class='col-5'>" +
+            "<div class='col-4'>" +
             "<a href='" + annonces[i].photo + "' >" +
             "<img src='" + annonces[i].photo + "' class='img-thumbnail' alt='Photo annonce' title='Cliquez pour aggrandir' />" +
             "</a>" +
             "</div>" + 
-            "<div class='col-4 cell-align'>" +
+            "<div class='col-6 cell-align'>" +
             "<div>" +
-            "<p>" + annonces[i].titre + "</p>" +
-            "<p>" + annonces[i].categorie + "</p>" +
-            "<p>" + annonces[i].prix + " euros </p>" +
-            "<p>" + annonces[i].date_ajout + "</p>" +
+            "<p class='font-weight-bold text-left'>" + annonces[i].titre + "</p>" +
+            "<p class='text-left'>" + annonces[i].categorie + "</p>" +
+            "<p class='text-justify'>" + annonces[i].description + "</p>" +
+            "<p class='text-secondary text-left font-weight-bold'>" + annonces[i].prix + " euros </p>" +
+            "<p class='text-right'><small>" + annonces[i].date_ajout + "</small></p>" +
             "</div>" +
             "</div>" +
-            "<div class='col-2 cell-align'>" +
+            "<div class='col-2'>" +
             // Passage en brut pour l'ID, le temps de trouver une solution temp
             "<a class='btn btn-danger' href='/Cours/TechnoWeb/PROJET/pawcs/php/suppression.php?id="+myID+"' role='button'>Supprimer</a>" +
             "</div>" +
@@ -42,7 +43,7 @@ document.addEventListener('DOMContentLoaded', function() {
         logAnnonces.innerHTML = annoncesStructurees;
         } else {
           for (var i=0; i < annonces.length; i++) {
-            annoncesStructurees += "<div class='row border border-dark rounded m-2 text-center'>" +
+            annoncesStructurees += "<div class='row border border-dark rounded m-2'>" +
               "<div class='col-4'>" +
               "<a href='" + annonces[i].photo + "' >" +
               "<img src='" + annonces[i].photo + "' class='img-thumbnail' alt='Photo annonce' title='Cliquez pour aggrandir' />" +
@@ -50,10 +51,11 @@ document.addEventListener('DOMContentLoaded', function() {
               "</div>" + 
               "<div class='col-8 cell-align'>" +
               "<div>" +
-              "<p>" + annonces[i].titre + "</p>" +
-              "<p>" + annonces[i].categorie + "</p>" +
-              "<p>" + annonces[i].prix + " euros </p>" +
-              "<p>" + annonces[i].date_ajout + "</p>" +
+              "<p class='font-weight-bold text-left'>" + annonces[i].titre + "</p>" +
+              "<p class='text-left'>" + annonces[i].categorie + "</p>" +
+              "<p class='text-justify'>" + annonces[i].description + "</p>" +
+              "<p class='text-scondary text-left font-weight-bold'>" + annonces[i].prix + " euros </p>" +
+              "<p class='text-right'><small>" + annonces[i].date_ajout + "</small></p>" +
               "</div>" +
               "</div>" +
               "</div>";
