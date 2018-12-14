@@ -7,7 +7,7 @@ document.addEventListener("DOMContentLoaded", function() {
       //console.log(this.responseText);
       var annonce = JSON.parse(this.responseText);
       //console.log("ANNONCES : ");
-      var annonceStructure = "<div class='col-4'>" +
+      var annonceStructure = "<div class='col-4 cell-align'>" +
         "<a href='" + annonce[0].photo + "' >" +
         "<img src='" + annonce[0].photo +
         "' class='img-thumbnail' alt='Photo annonce' title='Cliquez pour aggrandir' />" +

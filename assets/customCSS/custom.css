@@ -7,3 +7,8 @@
 .mb-huge {
   margin-bottom:400px;
 }
+
+#ours-logo {
+  max-width:100px;
+  margin-top:-7px;
+}

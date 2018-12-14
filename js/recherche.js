@@ -18,7 +18,7 @@ document.addEventListener('DOMContentLoaded', function() {
           var myID = annonces[i].id;
           console.log(myID);
           annoncesStructurees += "<div class='row border border-dark rounded m-2 text-center'>" +
-            "<div class='col-4'>" +
+            "<div class='col-4 cell-align'>" +
             "<a href='" + annonces[i].photo + "' >" +
             "<img src='" + annonces[i].photo + "' class='img-thumbnail' alt='Photo annonce' title='Cliquez pour aggrandir' />" +
             "</a>" +
@@ -32,7 +32,7 @@ document.addEventListener('DOMContentLoaded', function() {
             "<p class='text-right'><small>" + annonces[i].date_ajout + "</small></p>" +
             "</div>" +
             "</div>" +
-            "<div class='col-2'>" +
+            "<div class='col-2 cell-align'>" +
             // Passage en brut pour l'ID, le temps de trouver une solution temp
             "<a class='btn btn-danger' href='/Cours/TechnoWeb/PROJET/pawcs/php/suppression.php?id="+myID+"' role='button'>Supprimer</a>" +
             "</div>" +
@@ -44,7 +44,7 @@ document.addEventListener('DOMContentLoaded', function() {
         } else {
           for (var i=0; i < annonces.length; i++) {
             annoncesStructurees += "<div class='row border border-dark rounded m-2'>" +
-              "<div class='col-4'>" +
+              "<div class='col-4 cell-align'>" +
               "<a href='" + annonces[i].photo + "' >" +
               "<img src='" + annonces[i].photo + "' class='img-thumbnail' alt='Photo annonce' title='Cliquez pour aggrandir' />" +
               "</a>" +
