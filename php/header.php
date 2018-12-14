@@ -8,8 +8,9 @@ session_start();
   <title>OURS, annonces en ligne</title>
   <link rel="stylesheet" href="/Cours/TechnoWeb/PROJET/pawcs/assets/bootstrap/css/bootstrap.css">
   <link rel="stylesheet" href="/Cours/TechnoWeb/PROJET/pawcs/assets/customCSS/custom.css">
-  <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script style="text/javascript" src="/Cours/TechnoWeb/PROJET/pawcs/assets/bootstrap/js/bootstrap.js"></script>
+
 </head>
 <body>
   <div class="container">
@@ -17,10 +18,11 @@ session_start();
     <div class="row bg-dark mb-5 rounded">
       <div class="col">
         <nav class="navbar navbar-expand-lg navbar-light bg-dark">
-          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".ours-navbar" aria-controls="ours-navbar" aria-expanded="false" aria-label="Toggle navigation">
+         
+           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ours-navbar" aria-controls="ours-navbar" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
-          <div class="collapse navbar-collapse ours-navbar" id="ours-navbar">
+          <div class="collapse navbar-collapse" id="ours-navbar">
             <a class="navbar-brand" href="/Cours/TechnoWeb/PROJET/pawcs/index.php" title="Accueil">
               <img id="ours-logo" src="/Cours/TechnoWeb/PROJET/pawcs/assets/fig/main_logo.png">
             </a>
