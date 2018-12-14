@@ -5,9 +5,9 @@
 function connexionbd() {
 
 	// A MODIFIER : spécifiez votre login et votre mot de passe ici
-	$host = "venus";
-	$username = "";
-	$password = "";
+	$host = "localhost";
+	$username = "nedss";
+	$password = "web2018DB";
 	$dbname = $username;
 
 	// chaîne de connexion pour PDO (ne pas modifier)
@@ -41,8 +41,10 @@ function requete($bd, $req) {
 // - appeler cette fonction une seule fois au début de votre projet
 function creation_table() {
 	$maBd = connexionbd();
-	$maRequeteCreation = "CREATE TABLE annonces (id int AUTO_INCREMENT PRIMARY KEY, titre varchar(100), description text, categorie varchar(40), nom_vendeur varchar(60), prix int, photo varchar(255), rdv_lat float, rdv_lon float, date_ajout timestamp DEFAULT CURRENT_TIMESTAMP) CHARACTER SET UTF8";
-	requete($maBd, $maRequeteCreation);
+        $maRequeteCreation = "CREATE TABLE annonces (id int AUTO_INCREMENT PRIMARY KEY, titre varchar(100), description text, categorie varchar(40), nom_vendeur varchar(60), prix int, photo varchar(255), rdv_lat float, rdv_lon float, date_ajout timestamp DEFAULT CURRENT_TIMESTAMP) CHARACTER SET UTF8";
+        $maRequeteLog = "CREATE TABLE log (pseudo varchar(12), mdp varchar(12));";
+        requete($maBd, $maRequeteCreation);
+        requete($maBd, $maRequeteLog);
 }
 
 // insère des données d'exemple dans la base
@@ -53,17 +55,20 @@ function insertion_exemples() {
 		. "(DEFAULT, 'Cafetière en porcelaine, bon état général', 'Vends cafetière en procelaine italienne des années 60, en bon état.<br>Peu servi, contenance 60cl.<br>15€ ferme, à venir retirer chez moi.', 'cuisine', 'bogoss_34', 15, 'http://www.villeroy-boch.com/fileadmin/picdb/produkte/tk/large/23950100-preview.jpg', 43.632841, 3.8637333, DEFAULT),"
 		. "(DEFAULT, 'DVD TimeCop avec Jean-Claude Van Damme', 'Vends 1€ symbolique ce film culte en DVD, encore sous blister.', 'DVD / Films', 'Martine Dubois', 1, 'https://fanart.tv/fanart/movies/8831/moviedisc/timecop-53e23655c9ebd.png', 43.617857, 3.8573201, DEFAULT),"
 		. "(DEFAULT, 'Cheap Rolex watches', 'Rolex watch, incredible prices !<br><br>SPAM SPAM SPAM SPAM SPAM SPAM SPAM, SPAM SPAM SPAM SPAM SPAM SPAM<br>SPAM SPAM<br><br>SPAM !', 'bijoux', 'spam spam', 40, 'http://www.boutique-vintage.com/1139-3740-large/petite-montre-mickey-bleue-et-grise-80-s.jpg', 43.5465071, 3.8287231, DEFAULT),"
-		. "(DEFAULT, 'Villa 220m² avec piscine et jardin', 'Vends villa années 2000, de plain pied, beaux quartiers proche Montpellier.<br>Toiture rénovée en 2014, ampoules changées à la main avant-hier.<br>Petits travaux à prévoir suite à l''explosion de la citerne de gaz naturel.<br>340 000 euros à débattre. Contacter Jean au 06 66 66 66 66 entre 19h31 et 19h32.', 'immobilier', 'Jean Talus', 340000, 'http://www.photomaison.net/wp-content/uploads/2015/11/image-maison-lego-5.jpg', 43.5732676, 3.903428, DEFAULT);"
-	;
-	requete($maBd, $maRequeteInsertion);
+		. "(DEFAULT, 'Villa 220m² avec piscine et jardin', 'Vends villa années 2000, de plain pied, beaux quartiers proche Montpellier.<br>Toiture rénovée en 2014, ampoules changées à la main avant-hier.<br>Petits travaux à prévoir suite à l''explosion de la citerne de gaz naturel.<br>340 000 euros à débattre. Contacter Jean au 06 66 66 66 66 entre 19h31 et 19h32.', 'immobilier', 'Jean Talus', 340000, 'http://www.photomaison.net/wp-content/uploads/2015/11/image-maison-lego-5.jpg', 43.5732676, 3.903428, DEFAULT);";
+        $insertionLog = "INSERT INTO log VALUES ('nedss', 'web2018DB')";
+        requete($maBd, $maRequeteInsertion);
+        requete($maBd, $insertionLog);
 }
 
 // vide la table de toutes ses donnees
 // - appeler uniquement si besoin de faire le ménage
 function vidage_table() {
 	$maBd = connexionbd();
-	$maRequeteVidage = "TRUNCATE TABLE annonces";
-	requete($maBd, $maRequeteVidage);
+        $maRequeteVidage = "TRUNCATE TABLE annonces";
+        $vidageLog = "TRUNCATE TABLE log";
+        requete($maBd, $maRequeteVidage);
+        requete($maBd, $vidageLog);
 }
 
 ?>
